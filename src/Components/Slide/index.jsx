@@ -18,23 +18,24 @@ const Slide = () => {
   const [db, setData] = useState([]);
   useEffect(() => {
     SlickApi(setData);
-    console.log(db);
   }, []);
-  const slickList = [1,2,3,4,5]
+
   return (
-      <Styled.Wrapper>
-        <Slider {...settings}>
-          {db ? db.map((v, i) => {
-            return (
-              <Styled.SlickBox key={i}>
-                <Styled.SlickContent>
-                  <img src={v.IMAGE_URL.split(", ")[0]} />
-                </Styled.SlickContent>
-              </Styled.SlickBox>
-            );
-          }) : ''}
-        </Slider>
-      </Styled.Wrapper>
+    <Styled.Wrapper>
+      <Slider {...settings}>
+        {db
+          ? db.map((v, i) => {
+              return (
+                <Styled.SlickBox key={i}>
+                  <Styled.SlickContent>
+                    <img src={v.IMAGE_URL.split(", ")[0]} alt={v.PRDT_NM} />
+                  </Styled.SlickContent>
+                </Styled.SlickBox>
+              );
+            })
+          : ""}
+      </Slider>
+    </Styled.Wrapper>
   );
 };
 
