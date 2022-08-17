@@ -10,7 +10,6 @@ const Search = () => {
 
   const [edate, setedate] = useState("20220610");
 
-
   const locChange = (e) => {
     setLoc(e.target.value);
   };
@@ -20,7 +19,6 @@ const Search = () => {
       seApi(setData, edate);
     }
   };
-
 
   const edateChange = (e) => {
     setendDate(e.target.value);
@@ -33,7 +31,6 @@ const Search = () => {
           국가를 검색하면 위해정보를 알 수 있어요.
         </Styled.SearchTitle>
         <Styled.DateWrapper>
-        
           <Styled.DateChoice
             type="date"
             value={enddate}

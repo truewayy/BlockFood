@@ -45,25 +45,7 @@ const Information = () => {
 
       <Slide />
 
-      <div style={{ height: "500px", width: "100%" }}>
-        {date.map((v) => (
-            
-          <div key={v.id} style={{alignItems:"center"}}>
-            <div>
-              제품이름
-              <h3>{v.id}</h3>
-            </div>
-            <div>
-              위해성품명
-              <h3>{v.title}</h3>
-            </div>
-            <div>
-              차단일자
-              <h3>{v.content}</h3>
-            </div>
-          </div>
-        ))}
-      </div>
+      <div style={{ height: "500px", width: "100%" }}></div>
     </Styled.FlexContainer>
   );
 };

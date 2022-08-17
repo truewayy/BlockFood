@@ -8,13 +8,13 @@ const RecentBlock = () => {
         src="virus1.png"
         alt="virus1"
         width={350}
-        style={{ position: "absolute", right: "-10%", top: "110%" }}
+        style={{ position: "absolute", right: "0%", top: "110%" }}
       />
       <img
         src="virus2.png"
         alt="virus2"
         width={350}
-        style={{ position: "absolute", left: "-10%", top: "160%" }}
+        style={{ position: "absolute", left: "0%", top: "160%" }}
       />
       <Styled.MainText id="top">
         " 최근{" "}

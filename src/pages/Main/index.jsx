@@ -7,9 +7,14 @@ import Information from "../../Components/Informaition";
 const Main = () => {
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        scrollBehavior: "smooth",
+      }}
     >
-      <Styled.FlexWrapper>
+      <Styled.FlexWrapper id="home">
         <Styled.BackgroundWrapper>
           <Styled.StyledLogo src="logo2.png" />
           <Styled.Icon src="virus3.png" />
@@ -28,9 +33,9 @@ const Main = () => {
           <Styled.Icon src="scrolldown.png" id="scroll" />
         </Styled.BackgroundWrapper>
       </Styled.FlexWrapper>
-      <RecentBlock />
-      <Search />
-      <Information />
+      <RecentBlock id="recent" />
+      <Search id="search" />
+      <Information id="info" />
     </div>
   );
 };

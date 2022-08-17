@@ -14,6 +14,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 60%;
+  height: 100vh;
   margin: 0 auto;
   @media only screen and (max-width: 960px) {
     width: 90%;

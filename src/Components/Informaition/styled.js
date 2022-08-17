@@ -4,6 +4,7 @@ export const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
   align-items: center;
 `;
 
@@ -53,8 +54,8 @@ export const FormCheckText = styled.span`
   color: #777;
 `;
 
-export const RaidoButton = styled.input.attrs({ type: 'radio' })`
-&:checked {
+export const RaidoButton = styled.input.attrs({ type: "radio" })`
+  &:checked {
     display: inline-block;
     background: none;
     padding: 0px 10px;
@@ -69,4 +70,4 @@ export const RaidoButton = styled.input.attrs({ type: 'radio' })`
     color: #fff;
   }
   display: none;
-`
+`;
