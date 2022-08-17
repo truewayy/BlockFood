@@ -1,7 +1,8 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import FooterBar from './Components/Footer'
-import Main from "./pages/Main/index"
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import FooterBar from "./Components/Footer";
+import SideBar from "./Components/SideBar";
+import Main from "./pages/Main/index";
 
 /*기능정의
 해외위해식품 회수정보
@@ -14,12 +15,11 @@ http://openapi.foodsafetykorea.go.kr/api/keyId/serviceId/dataType/startIdx/endId
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Main />} />
-      </Routes>
+      <SideBar />
+      <Main />
       <FooterBar />
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;

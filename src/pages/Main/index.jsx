@@ -6,14 +6,7 @@ import Information from "../../Components/Informaition";
 
 const Main = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        scrollBehavior: "smooth",
-      }}
-    >
+    <div>
       <Styled.FlexWrapper id="home">
         <Styled.BackgroundWrapper>
           <Styled.StyledLogo src="logo2.png" />
@@ -33,9 +26,15 @@ const Main = () => {
           <Styled.Icon src="scrolldown.png" id="scroll" />
         </Styled.BackgroundWrapper>
       </Styled.FlexWrapper>
-      <RecentBlock id="recent" />
-      <Search id="search" />
-      <Information id="info" />
+      <div id="recent">
+        <RecentBlock />
+      </div>
+      <div id="search">
+        <Search id="search" />
+      </div>
+      <div id="info">
+        <Information id="info" />
+      </div>
     </div>
   );
 };

@@ -6,7 +6,6 @@ export const FlexContainer = styled.div`
   align-items: center;
   width: 90%;
   height: 100vh;
-  margin-top: 200px;
 `;
 
 export const MainText = styled.div`
