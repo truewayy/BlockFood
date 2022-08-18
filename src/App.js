@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import FooterBar from "./Components/Footer";
 import Main from "./pages/Main/index";
 import RecentBlock from "./Components/RecentBlock/index";
@@ -23,15 +23,17 @@ const App = () => {
   $(() => {
     $("#fullpage").fullpage({
       scrollOverflow: true,
-      navigation: true,
+      navigation: false,
       navigationTooltips: ["홈", "위해식품", "검색", "차단/회수정보"],
       showActiveTooltip: true,
       anchors: ["home", "recent", "search", "info"],
+      keyboardScrolling: false,
     });
   });
 
   return (
     <BrowserRouter>
+      <SideBar />
       <div id="fullpage">
         <div className="section" data-anchors="home">
           <Main />

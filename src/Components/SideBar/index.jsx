@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
-import { useEffect } from "react";
 const SideDiv = styled.div`
   width: 7%;
   position: fixed;
@@ -39,10 +38,10 @@ const SideBar = () => {
   ];
   const [scroll, setScroll] = useState("home");
 
-  useEffect(() => {
+  window.addEventListener("wheel", (e) => {
     setScroll(window.location.href.split("#")[1]);
-  }, [window.location.pathname]);
-  console.log(window.location.href);
+  });
+
   return (
     <SideDiv style={{ zIndex: "1" }}>
       <form
@@ -53,8 +52,13 @@ const SideBar = () => {
       >
         {page.map((v) => {
           return (
-            <label>
-              <CustomLink name="page" value={v.id} checked={v.id === scroll} />
+            <label key={v.name}>
+              <CustomLink
+                name="page"
+                value={v.id}
+                checked={v.id === scroll}
+                readOnly
+              />
               <FormCheckText>{v.name}</FormCheckText>
             </label>
           );
