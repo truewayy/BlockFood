@@ -9,12 +9,6 @@ const Information = () => {
     setType(e.target.value);
   };
 
-  const date = [
-    { id: 1, title: "wow", content: "eeee" },
-    { id: 2, title: "wwerow", content: "eeqweee" },
-    { id: 3, title: "wccow", content: "eeefde" },
-  ];
-
   return (
     <Styled.FlexContainer>
       <Styled.Wrap>
