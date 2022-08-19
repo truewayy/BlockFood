@@ -1,6 +1,5 @@
-import instance from "./ApiController";
 import axios from "axios";
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = "a5915d349a0340e5bf87";
 
 export const mainApi = async () => {
   // // http://openapi.foodsafetykorea.go.kr/api/apikey/서비스명/json/1/5

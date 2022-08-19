@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Background from "../../img/background.jpg";
 
 export const FlexWrapper = styled.div`
@@ -28,6 +28,18 @@ export const StyledLogo = styled.img`
   cursor: pointer;
 `;
 
+const ScrollDown = keyframes`
+  0% {
+    bottom: -12%;
+  }
+  50% {
+    bottom: -13%;
+  }
+  100% {
+    bottom: -14%;
+  }
+`;
+
 export const Icon = styled.img`
   color: #fff;
   width: 55px;
@@ -39,6 +51,8 @@ export const Icon = styled.img`
     position: relative;
     bottom: -12%;
     width: 42px;
+    cursor: pointer;
+    animation: ${ScrollDown} 0.5s 1s infinite linear alternate;
   }
 `;
 

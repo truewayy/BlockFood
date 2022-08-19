@@ -8,6 +8,7 @@ import { SlickApi } from "../../api/Api";
 const NextArrow = ({ className, style, onClick }) => {
   return (
     <img
+      alt="nextarr"
       className={className}
       style={{
         ...style,
@@ -23,6 +24,7 @@ const NextArrow = ({ className, style, onClick }) => {
 const PrevArrow = ({ className, style, onClick }) => {
   return (
     <img
+      alt="prevarr"
       className={className}
       style={{
         ...style,
