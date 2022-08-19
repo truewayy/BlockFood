@@ -31,7 +31,7 @@ export const seApi = async (setData, edate) => {
 };
 
 export const SlickApi = async (setData) => {
-  const url = `${API_KEY}/I2715/json/1/10`;
+  const url = `http://openapi.foodsafetykorea.go.kr/api/${API_KEY}/I2715/json/1/10`;
   const options = {
     method: "GET",
     headers: {
