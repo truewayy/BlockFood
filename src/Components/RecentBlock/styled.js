@@ -6,7 +6,6 @@ export const FlexContainer = styled.div`
   align-items: center;
   height: 100vh;
   justify-content: center;
-  width: 90%;
 `;
 
 export const MainText = styled.div`
@@ -15,9 +14,11 @@ export const MainText = styled.div`
   font-weight: bold;
   &#top {
     margin-right: auto;
+    margin-bottom: 5vh;
   }
   &#bottom {
     margin-left: auto;
+    margin-top: -5vh;
   }
 `;
 
