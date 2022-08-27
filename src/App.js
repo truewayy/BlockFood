@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FooterBar from "./Components/Footer";
 import Main from "./pages/Main/index";
 import RecentBlock from "./Components/RecentBlock/index";
@@ -10,6 +10,7 @@ import "fullpage.js/vendors/scrolloverflow";
 import "fullpage.js";
 import "fullpage.js/dist/jquery.fullpage.min.css";
 import $ from "jquery";
+import FoodDetail from "./pages/Main/FoodDetail";
 
 /*기능정의
 해외위해식품 회수정보
@@ -34,21 +35,29 @@ const App = () => {
   return (
     <BrowserRouter>
       <SideBar />
-      <div id="fullpage">
-        <div className="section" data-anchors="home">
-          <Main />
-        </div>
-        <div className="section" data-anchors="recent">
-          <RecentBlock />
-        </div>
-        <div className="section" data-anchors="search">
-          <Search />
-        </div>
-        <div className="section" data-anchors="info">
-          <Information />
-          <FooterBar />
-        </div>
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div id="fullpage">
+              <div className="section" data-anchors="home">
+                <Main />
+              </div>
+              <div className="section" data-anchors="recent">
+                <RecentBlock />
+              </div>
+              <div className="section" data-anchors="search">
+                <Search />
+              </div>
+              <div className="section" data-anchors="info">
+                <Information />
+                <FooterBar />
+              </div>
+            </div>
+          }
+        />
+        <Route path="/detail" element={<FoodDetail />} />
+      </Routes>
     </BrowserRouter>
   );
 };
