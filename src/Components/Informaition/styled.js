@@ -3,27 +3,28 @@ import styled from "styled-components";
 export const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
   align-items: center;
 `;
 
-export const MainText = styled.div`
-  font-family: NotoSansKR;
-  font-size: 32px;
+export const SearchTitle = styled.div`
+  display: flex;
+  font-size: 50px;
+  font-family: Noto Sans KR;
   font-weight: bold;
+  letter-spacing: 1.8px;
+  line-height: 1.25;
+  &#dot {
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+  }
 `;
-
 export const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 50%;
-  align-items: center;
+  width: 60%;
+  align-items: flex-end;
   padding-bottom: 50px;
-`;
-
-export const Wrapper = styled.div`
-  width: 40%;
 `;
 
 export const SlickBox = styled.div`
@@ -44,14 +45,14 @@ export const ContentBox = styled.div`
 
 export const FormCheckText = styled.span`
   font-size: 20px;
-  width: 180px;
-  height: 35px;
-  background: #e6e6e6;
+  width: 190px;
+  height: 50px;
+  border: 2px solid #009944;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  color: #777;
+  color: #009944;
 `;
 
 export const RaidoButton = styled.input.attrs({ type: "radio" })`

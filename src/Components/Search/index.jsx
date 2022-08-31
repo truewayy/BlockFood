@@ -45,6 +45,9 @@ const Search = () => {
           onChange={locChange}
           onKeyPress={locKeypress}
         />
+        <Styled.SearchTitle id="dot">.</Styled.SearchTitle>
+        <Styled.SearchTitle id="dot">.</Styled.SearchTitle>
+        <Styled.SearchTitle id="dot">.</Styled.SearchTitle>
       </Styled.SearchWrapper>
       {db != null ? <MainList props={db} loc={loc} /> : ""}
     </Styled.Container>

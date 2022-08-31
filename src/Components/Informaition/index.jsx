@@ -12,7 +12,10 @@ const Information = () => {
   return (
     <Styled.FlexContainer>
       <Styled.Wrap>
-        <Styled.MainText>차단/회수 정보를 알아보세요</Styled.MainText>
+        <Styled.SearchTitle>
+          차단, 회수 정보를 <br />
+          알아보세요!
+        </Styled.SearchTitle>
         <div>
           <label>
             <Styled.RaidoButton
@@ -32,7 +35,7 @@ const Information = () => {
               value="2"
               onChange={onChange}
             />
-            <Styled.FormCheckText>회수정보</Styled.FormCheckText>
+            <Styled.FormCheckText id="green">회수정보</Styled.FormCheckText>
           </label>
         </div>
       </Styled.Wrap>

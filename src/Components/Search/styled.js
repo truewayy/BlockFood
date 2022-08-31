@@ -23,26 +23,30 @@ export const Container = styled.div`
 
 export const SearchWrapper = styled.div`
   display: flex;
-  width: 70%;
+  width: 68%;
   flex-direction: column;
   padding: 1rem 0;
 `;
 
 export const SearchTitle = styled.div`
   display: flex;
-  font-size: 72px;
+  font-size: 60px;
   font-family: Noto Sans KR;
   font-weight: bold;
   letter-spacing: 1.8px;
   line-height: 1.25;
-  padding-top: 4rem;
+  &#dot {
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+  }
 `;
 
 export const SearchInput = styled.input`
   width: 100%;
-  border: 8px solid #009944;
+  border: 6px solid #009944;
   padding: 30px;
-  margin: 5rem 0;
+  margin: 3rem 0;
   font-size: 2rem;
   ::placeholder {
     color: #bfbfbf;

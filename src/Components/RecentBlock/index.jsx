@@ -26,16 +26,7 @@ const RecentBlock = () => {
           style={{ position: "absolute", left: "-10%", top: "40%" }}
         />
         <Styled.MainText id="top">
-          " 최근{" "}
-          <span
-            style={{
-              backgroundColor: "#009944",
-              color: "white",
-            }}
-          >
-            위해 식품
-          </span>
-          은
+          " 최근 <Styled.CustomSpan>위해 식품</Styled.CustomSpan>은
         </Styled.MainText>
         <Slide />
         <Styled.MainText id="bottom">입니다 "</Styled.MainText>{" "}

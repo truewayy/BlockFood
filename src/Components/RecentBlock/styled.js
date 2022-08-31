@@ -9,7 +9,7 @@ export const FlexContainer = styled.div`
 `;
 
 export const MainText = styled.div`
-  font-family: NotoSansKR;
+  font-family: Noto Sans KR;
   font-size: 72px;
   font-weight: bold;
   &#top {
@@ -19,6 +19,23 @@ export const MainText = styled.div`
   &#bottom {
     margin-left: auto;
     margin-top: -5vh;
+  }
+`;
+
+export const CustomSpan = styled.span`
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  ::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    top: calc(50% - 26%);
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #009944;
   }
 `;
 
