@@ -28,18 +28,20 @@ const Search = () => {
     <Styled.Container>
       <Styled.SearchWrapper>
         <Styled.SearchTitle>
-          국가를 검색하면 위해정보를 알 수 있어요.
+          나라를 검색하면
+          <br />
+          나라별 위해 식품을 알 수 있어요
         </Styled.SearchTitle>
-        <Styled.DateWrapper>
+        {/* <Styled.DateWrapper>
           <Styled.DateChoice
             type="date"
             value={enddate}
             onChange={edateChange}
           ></Styled.DateChoice>
-        </Styled.DateWrapper>
+        </Styled.DateWrapper> */}
 
         <Styled.SearchInput
-          placeholder="국가 이름을 검색하세요."
+          placeholder="ex) 미국, 캐나다"
           onChange={locChange}
           onKeyPress={locKeypress}
         />

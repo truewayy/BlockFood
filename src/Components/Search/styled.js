@@ -13,7 +13,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  justify-content: center;
   height: 100vh;
   margin: 0 auto;
   @media only screen and (max-width: 960px) {
@@ -23,27 +23,32 @@ export const Container = styled.div`
 
 export const SearchWrapper = styled.div`
   display: flex;
-  width: 100%;
+  width: 70%;
   flex-direction: column;
   padding: 1rem 0;
 `;
 
 export const SearchTitle = styled.div`
   display: flex;
-  font-size: 1.5rem;
-  font-family: "Pretendard-SemiBold";
+  font-size: 72px;
+  font-family: Noto Sans KR;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  line-height: 1.25;
   padding-top: 4rem;
 `;
 
 export const SearchInput = styled.input`
   width: 100%;
-  height: 50px;
-  border: none;
-  border-bottom: 1.5px solid #000000;
-  margin: 0.5rem 0;
-  background-repeat: no-repeat;
-  background-position: 99%;
-
+  border: 8px solid #009944;
+  padding: 30px;
+  margin: 5rem 0;
+  font-size: 2rem;
+  ::placeholder {
+    color: #bfbfbf;
+    font-family: Noto Sans KR;
+    font-weight: 500;
+  }
   &:focus {
     outline: none;
   }
