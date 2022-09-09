@@ -4,6 +4,9 @@ export const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 `;
 
 export const SearchTitle = styled.div`
@@ -22,7 +25,6 @@ export const SearchTitle = styled.div`
 export const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 60%;
   align-items: flex-end;
   padding-bottom: 50px;
 `;
